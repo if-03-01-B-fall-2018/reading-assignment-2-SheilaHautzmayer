@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2.CheatSheet</title>
+</head>
+<body>
+    <h1>2.CheatSheet by Sheila Hautzmayer</h1>
+
+    <section>
+
+        <h2>HTML</h2>
+
+        <h3>1)Components of html elements </h3>
+
+        <p>~start tag, end tag, the content inserted in between</p>
+
+        <h3>2)Identify void elements and how they are denoted</h3>
+
+        <p>~They recommend lowercase in HTML and are denoted as W3C</p>
+
+        <h3>3)Identify attributes</h3>
+
+        <p>~All HTML elements can have attributes</p>
+
+        <p>~They provide additional infos about an element</p>
+
+        <p>~They are always specified in the start tag</p>
+
+        <p>~They usually come in name/value pairs like: name = "value"</p>
+
+        <h3>4)Write down the correct &lt;!DOCTYPE&gt; declaration for html 5</h3>
+
+        <p>~&lt;!DOCTYPE html&gt;</p>
+
+        <h3>5)Write down syntactically correct statements for the following elements</h3>
+
+        <h4>1.Article (&lt;article&gt;)</h4>
+
+        <p>The &lt;article&gt; tag specifies independent, self-contained content</p>
+
+        <h4>2.Body (&lt;body&gt;)</h4>
+
+        <p>&lt;body&gt;</p>
+
+        <p>The content of the document . . .</p>
+
+        <p>&lt;/body&gt;</p>
+
+        <h4>3.Line break (&lt;br/&gt;)</h4>
+
+        <p>This is<br>a paragraph with line<br>breaks</p>
+
+        <p>&lt;p&gt;This is&lt;br&gt;a paragraph with line&lt;br&gt;breaks&lt;/p&gt; </p>
+
+        <h4>4.Headings (&lt;h1&gt;, ...)</h4>
+
+        <h1>&lt;h1&gt;h1&lt;/h1&gt;</h1>
+        <h2>&lt;h2&gt;h2&lt;/h2&gt;</h2>
+        <h3>&lt;h3&gt;h3&lt;/h3&gt;</h3>
+        <h4>&lt;h4&gt;h4&lt;/h4&gt;</h4>
+        <h5>&lt;h5&gt;h5&lt;/h5&gt;</h5>
+        <h6>&lt;h6&gt;h6&lt;/h6&gt;</h6>
+
+        <h4>5.Section with meta infos (&lt;head&gt;)</h4>
+
+        <p>~The HTML &lt;head&gt; element is a container for metadata. Metadata is not displayed</p>
+
+        <p>~It is placed between the &lt;html&gt; tag and the &lt;body&gt; tag</p>
+
+        <p>&lt;head&gt;</p>
+        <p>&lt;meta charset="utf-8" /&gt;</p>
+        <p>&lt;title&gt;2.CheatSheet&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+
+        <h4>6.Top level element (&lt;html&gt;)</h4>
+
+        <p>&lt;html&gt;</p>
+
+        <p>head</p>
+
+        <p>body</p>
+
+        <p>&lt;/html&gt;</p>
+
+        <h4>7.Image named Team.jpg (&lt;img src = "Team.jpg"&gt;)</h4>
+
+        <img src="pic_trulli.jpg" alt="Italian Trulli">
+
+        <p>&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;</p>
+
+        <h4>8.Paragraph (&lt;p&gt;)</h4>
+
+        <p>This is a paragraph</p>
+
+        <p>&lt;p&gt; This is how to write a paragraph &lt;/p&gt;</p>
+
+        <h4>9.Section (&lt;section&gt;)</h4>
+
+        <p>&lt;section&gt; tag defines the section of documents such as chapters</p>
+
+        <h4>10.Label appearing in the title bar (&lt;title&gt;)</h4>
+
+        <p>&lt;title&gt;2.CheatSheet&lt;/title&gt;</p>
+
+        <h4>11.Link to other pages (&lt;a&gt;)</h4>
+
+        <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+        <p>&lt;a href = "https://www.w3schools.com/html/"&gt; Visit out HTML tutorial&lt;/a&gt;</p>
+
+        <h4>12.Comment</h4>
+
+        <!--This is a comment-->
+
+        <p>&lt;!-- This is how you make commands --&gt;</p>
+
+        <h4>13.Head with title and meta elements</h4>
+
+        <p>~The HTML &lt;head&gt; element is a container for metadata. Metadata is not displayed</p>
+
+        <p>~It is placed between the &lt;html&gt; tag and the &lt;body&gt; tag</p>
+
+    </section>
+
+    <section>
+
+        <h2>CSS</h2>
+
+        <h3>1)Components of a css rule</h3>
+
+        <p>~selector and a declaration block</p>
+
+        <p>~The selector points to the HTML element you want to style</p>
+
+        <p>~The declaration block contains one or more declarations separated by semicolons</p>
+
+        <p>~Each declaration includes a CSS property name and a value, separated by a colon</p>
+
+        <p>h1 {color:blue; font-size:12px;}</p>
+
+        <h3>2)Use combinators properly: direct child, descendant, adjacent sibling, sibling</h3>
+
+        <p>
+            descendant selector (space)<br>
+
+            div p {<br>
+            background-color: yellow;<br>
+            }<br><br>
+
+            child selector (>)<br>
+
+            div > p {<br>
+            background-color: yellow;<br>
+            }<br><br>
+
+            adjacent sibling selector (+)<br>
+
+            div + p {<br>
+            background-color: yellow;<br>
+            }<br><br>
+
+            general sibling selector (~)<br>
+
+            div ~ p {<br>
+            background-color: yellow;<br>
+            }
+
+        </p>
+
+        <h3>3)Specify colors by color names and in hexadecimal notation</h3>
+
+        <p style="background-color:Tomato;">Tomato</p>
+
+        <p style="background-color:rgb(255, 99, 71);">255, 99, 71</p>
+
+        <p style="background-color:DodgerBlue;">DodgerBlue</p>
+
+        <p style="background-color:rgb(10, 125, 255)">10, 125, 255</p>
+
+        <p style="background-color:MediumSeaGreen;">MediumSeaGreen</p>
+
+        <p style="color:rgb(60, 179, 113);">60, 179, 113</p>
+
+        <p>&lt;p style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/p&gt;</p>
+
+        <p>&lt;p style="color:rgb(60, 179, 113);"&gt;60, 179, 113&lt;/p&gt;</p>
+
+        <h3>4)Declarations for color, background color</h3>
+
+        <p>Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different background colors</p><br>
+
+        <p>~Color</p>
+
+        <p>
+            h1 {<br>
+            color: white;<br>
+            }<br><br>
+        
+
+       
+            div {<br>
+            color: green;<br>
+            }<br><br>
+       
+
+       
+            p {<br>
+            color: green;<br>
+            }<br><br>
+        </p>
+
+        <br>
+
+        <p>~Backround color</p>
+
+        <p>
+            h1 {<br>
+            background-color: green;<br>
+            }<br><br>
+        
+
+       
+            div {<br>
+            background-color: green;<br>
+            }<br><br>
+        
+
+        
+            p {<br>
+            background-color: green;<br>
+            }
+        </p>
+
+        <h3>5)Pseudo classes for the &lt;a&gt; element</h3>
+
+        <p>
+            unvisited link <br>
+            a:link {<br>
+            color: #FF0000;<br>
+            }<br><br>
+
+            visited link <br>
+            a:visited {<br>
+            color: #00FF00;<br>
+            }<br><br>
+
+            mouse over link<br>
+            a:hover {<br>
+            color: #FF00FF;<br>
+            }<br><br>
+
+            selected link<br>
+            a:active {<br>
+            color: #0000FF;<br>
+            }
+        </p>
+
+        <h3>6)Declaration for background image</h3>
+
+        <p>
+            body {<br>
+            background-image: url("paper.gif");<br>
+            }
+        </p>
+
+        <h3>7)Declaration for text alignment (left, right, center, justify)</h3>
+
+        <p>
+            h1 {<br>
+            text-align: center;<br>
+            }<br><br>
+
+            h2 {<br>
+            text-align: left;<br>
+            }<br><br>
+
+            h3 {<br>
+            text-align: right;<br><br>
+            }
+
+            div {<br>
+            text-align: justify;<br>
+            }
+
+        </p>
+
+        <h3>8)Declaration for text decoration (overline, underline, line-through)</h3>
+
+        <p>
+            h1 {<br>
+            text-decoration: overline;<br>
+            }<br><br>
+
+            h2 {<br>
+            text-decoration: line-through;<br>
+            }<br><br>
+
+            h3 {<br>
+            text-decoration: underline;<br>
+            }
+        </p>
+
+        <h3>9)Declaration for text transformation (uppercase, lowercase, capitalize)</h3>
+
+        <p>
+            p.uppercase {<br>
+            text-transform: uppercase;<br>
+            }<br><br>
+
+            p.lowercase {<br>
+            text-transform: lowercase;<br>
+            }<br><br>
+
+            p.capitalize {<br>
+            text-transform: capitalize;<br>
+            }
+        </p>
+
+        <h3>10)Identify the difference between serif and sans-serif fonts</h3>
+
+        <p>On computer screens, sans-serif fonts are considered easier to read than serif fonts</p>
+
+        <h3>11)Declarations for font families</h3>
+
+        <p>
+            p {<br>
+            font-family: "Times New Roman", Times, serif;<br>
+            }
+        </p>
+
+        <h3>12)Declarations for font style normal and italic</h3>
+
+        <p>
+            p.normal {<br>
+            font-style: normal;<br>
+            }<br><br>
+
+            p.italic {<br>
+            font-style: italic;<br>
+            }
+        </p>
+
+        <h3>13)Declarations for font sizes</h3>
+
+        <p>With pixels or EM</p>
+
+        <p>
+            h1 {<br>
+            font-size: 40px;<br>
+            }<br><br>
+
+            h1 {<br>
+            font-size: 2.5em;  (40px/16=2.5em)<br>
+            }
+        </p>
+
+        <h3>14)Declarations for font weights</h3>
+
+        <p>
+            p.normal {<br>
+            font-weight: normal;<br>
+            }<br><br>
+
+            p.thick {<br>
+            font-weight: bold;<br>
+            }
+
+        </p>
+
+    </section>
+
+
+</body>
+</html>
